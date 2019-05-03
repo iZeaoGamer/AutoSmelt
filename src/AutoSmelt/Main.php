@@ -41,7 +41,7 @@ $ev->setInstaBreak(true);
 foreach($this->ores as $ore){
 if($block->getId() === $ore && !$ev->isCancelled()){
 $ev->setDrops(array());
-$p->sendPopup("§7-=[ §7The Ore Is In Your Inv§7... ]=-");
+$p->sendPopup(TextFormat::colorize("&cThe smelted item is in your inventory."));
 $p->getInventory()->addItem(Item::get($this->ingot[$ore]));
                 $x = $p->getX();
                 $y = $p->getY();
